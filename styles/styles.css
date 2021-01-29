@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Montserrat:wght@100;200;400&display=swap");
+body {
+  margin: 0%;
+  background-color: #fffdf9;
+  color: #331701;
+  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.head-container {
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-backdrop-filter: blur(20px, 20px);
+          backdrop-filter: blur(20px, 20px);
+}
+
+.head-container .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px 0px 20px 0px;
+}
+
+.head-container .head p {
+  display: inline;
+  font-family: "Lora", serif;
+  font-size: 1.6rem;
+  margin: 0px 20px;
+}
+
+.head-container .head p:hover {
+  opacity: 0.8;
+  -webkit-animation: headerLogoHoverAnimation 600ms both;
+          animation: headerLogoHoverAnimation 600ms both;
+}
+
+@-webkit-keyframes headerLogoHoverAnimation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes headerLogoHoverAnimation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.4;
+  }
+}
+
+.head-container .head ul {
+  margin-right: 20px;
+  display: inline;
+  list-style-type: none;
+}
+
+.head-container .head ul li {
+  display: inline;
+  text-decoration: none;
+  margin: 0px 20px 0px 20px;
+}
+
+@media (max-width: 800px) {
+  .head-container .head {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .head-container .head ul {
+    display: none;
+  }
+}
+
+.hero-container {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ebe3d6), to(#ddd1bb));
+  background-image: linear-gradient(to bottom, #ebe3d6, #ddd1bb);
+}
+
+.hero-container .hero {
+  max-width: 800px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-container .hero .hero-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero-container .hero .hero-content .hero-heading {
+  font-size: 3rem;
+  font-weight: 100;
+  margin: 0;
+  padding: 50px 20px 25px;
+}
+
+.hero-container .hero .hero-content .hero-button-bar {
+  padding: 0px 20px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-container .hero .hero-content .hero-button-bar .button-primary {
+  padding: 0.75em 3em;
+  background-color: #331701;
+  border: 0;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  color: #fffdf9;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+}
+
+.hero-container .hero .hero-content .hero-button-bar .button-secondary {
+  padding: 0.75em 3em;
+  background-color: #00000000;
+  border: 0;
+  color: #331701;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+}
+
+.hero-container .hero .hero-image {
+  margin: 0px 20px;
+  max-height: 400px;
+  margin-top: -70px;
+}
+
+@media (max-width: 800px) {
+  .hero-container .hero .hero-content .hero-heading {
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+  .hero-container .hero .hero-content .hero-button-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    position: relative;
+    left: auto;
+  }
+  .hero-container .hero .hero-content .hero-button-bar .button-primary {
+    padding: 0.75em 1em;
+  }
+  .hero-container .hero .hero-image {
+    max-height: 300px;
+    margin-top: -45px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
