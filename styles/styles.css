@@ -3,7 +3,6 @@ body {
   margin: 0%;
   background-color: #fffdf9;
   color: #331701;
-  font-family: "Lora", serif;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -30,8 +29,12 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 auto;
-  max-width: 800px;
-  padding: 20px 0px 20px 0px;
+  max-width: 1000px;
+  padding: 20px 0px;
+}
+
+.head-container .head .menu_show {
+  display: none;
 }
 
 .head-container .head p {
@@ -39,6 +42,11 @@ body {
   font-family: "Lora", serif;
   font-size: 1.6rem;
   margin: 0px 20px;
+  cursor: pointer;
+}
+
+.head-container .head .menu_chat {
+  display: none;
 }
 
 .head-container .head p:hover {
@@ -65,13 +73,13 @@ body {
   }
 }
 
-.head-container .head ul {
+.head-container .head nav ul {
   margin-right: 20px;
   display: inline;
   list-style-type: none;
 }
 
-.head-container .head ul li {
+.head-container .head nav ul li {
   display: inline;
   text-decoration: none;
   margin: 0px 20px 0px 20px;
@@ -79,11 +87,22 @@ body {
 
 @media (max-width: 800px) {
   .head-container .head {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  .head-container .head ul {
+  .head-container .head .menu_show {
+    display: inline;
+    padding: 0 1em;
+  }
+  .head-container .head .menu_chat {
+    display: inline;
+    padding: 0 1em;
+  }
+  .head-container .head p {
+    font-size: 1.2em;
+  }
+  .head-container .head nav {
     display: none;
   }
 }
@@ -94,7 +113,7 @@ body {
 }
 
 .hero-container .hero {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,6 +132,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0px 1em;
 }
 
 .hero-container .hero .hero-content .hero-heading {
@@ -158,6 +178,13 @@ body {
 }
 
 @media (max-width: 800px) {
+  .hero-container .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    place-items: center;
+  }
   .hero-container .hero .hero-content .hero-heading {
     font-size: 1.5rem;
     font-weight: 200;
@@ -182,8 +209,9 @@ body {
     padding: 0.75em 1em;
   }
   .hero-container .hero .hero-image {
-    max-height: 300px;
-    margin-top: -45px;
+    max-height: 400px;
+    margin-top: 0px;
+    max-width: 280px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
